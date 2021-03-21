@@ -1,77 +1,4 @@
-/*
-body{
-    width: 100%;
-}
-.father {
-    width: 100%;
-}
-.top{
-    display: inline-block;
-    width: 90%;
-    margin: 20px calc(45% - 40%);
-}
-    .top > .logo {
-    display: inline-block;
-    }
-    .top > nav {
-        display: inline-block;
-        width: 50%;
-        float: right;
-        text-align: center;
-        margin: 17px 0;
-    }
-        .top > .nav > .link{
-            display: inline-block;
-            margin: 10px 10px;
-            text-decoration: none;
-            color: darkgray;
-        }
-        .top > .nav > .button {
-            display: inline-block;
-            margin: 0px 10px;
-            text-decoration: none;
-            color: darkgray;
-            padding: 5px 30px;
-            border: 5px solid darkgrey;
-            border-radius: 25px;
-            font-weight: bold;
-        }
-main{
-    display: inline-block;
-    width: 100%;
-}
-    .main {
-        display: inline-block;
-        width: 1000px;
-        margin: 20px calc(50% - 500px)
-    }
-    .main > .bottom{
-        width: 50%;
-        display: inline-block;
-        margin: calc(50% - 40%) 0;
-        padding-left: 40px;
-        color: darkgrey;
-    }
-        h1{
-            display: inline-block;
-            width: 100%;
-            text-align: left;
-            font-family: monospace;
-            font-size: 100px;
-        }
-        p{
-            display: inline-block;
-            width: 80%;
-            font-size: 36px;
-        }
-    .main > .img{
-            display: inline-block;
-            width: 50%;
-            margin: 40px calc(50% - 50%);
-            float: right;
-        }
-        */
-        body {
+   /*  body {
             width: 100%;
         }
         .father{
@@ -119,7 +46,6 @@ main{
                 font-weight: bold;
             }
             main {
-                /* display: inline-block; */
                 width: 100%;
                 display: grid;
                 grid-row: 3/4;
@@ -129,12 +55,10 @@ main{
             }
             .main {
                 width: 1000px;
-                /* margin: 20px calc(50% - 500px); */
                 display: grid;
                 grid-template-columns: 4fr 6fr;
                 grid-row: 3/4;
                 grid-column: 1/4;
-                /* object-fit: contain; */
                 grid-template-columns: 40% 60%;
             }
             .main > .bottom {
@@ -167,5 +91,78 @@ main{
     }
     .main {
         width: 100%;
+    }
+} 
+*/
+ .logo {
+    padding-top: 10px;
+ }
+ .nav {
+    align-self: center;
+    text-align: end;   
+}
+.nav > .link{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 5px;
+    color: darkgray;
+}
+.box {
+    display: inline-block;
+}
+.box > .button {
+    display: inline-block;
+    text-decoration: none;
+    color: darkgray;
+    padding: 5px 30px;
+    border: 5px solid darkgrey;
+    border-radius: 25px;
+    font-weight: bold;
+}
+/**********************************************/
+.img {
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+}
+.bottom {
+    margin: 15% 0;
+}
+h1{
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    font-family: monospace;
+    font-size: 110px;
+    color: darkgray;
+}
+p{
+    display: inline-block;
+    color: darkgray;
+    width: 80%;
+    font-size: 36px;
+}
+@media (max-width: 860px){
+    .order {
+        order: 2;
+    }
+}
+@media (max-width: 680px) {
+    .nav {
+        text-align: center;
+    }
+    .logo {
+        text-align: center;
+    }
+}
+@media (max-width: 560px) {
+    .nav  > a{
+        width: 100%;
+    }
+    .nav .box {
+        width: 100%; 
+    }
+    .container {
+        padding-bottom: 20px;
     }
 }
